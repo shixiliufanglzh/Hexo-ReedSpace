@@ -2,7 +2,6 @@
 personal blog website
 
 ## 1 介绍
-
 - 基于Hexo搭建的个人博客网站
 - 使用了主题[hexo-theme-huhu](https://github.com/shixiaohu2206/hexo-theme-huhu.git)
 
@@ -126,10 +125,8 @@ hexo new page "tags"
 hexo new page "friends"
 hexo new page "categories"
 ```
-tags、categories、friends 有单独的 layout，所以新增命令后，需要在
-`/source/` <b>？？？？？？？？？？？？</b>
-下对应的文件中新增 layout 参数，例如：
-```
+tags、categories、friends 有单独的 layout，所以新增命令后，需要在 `/source/` 下对应的文件中新增 layout 参数，例如：
+```markdown
 ---
 title: categories
 date: 2020-03-29 10:59:55
@@ -138,30 +135,36 @@ layout: categories
 ```
 
 ### 3.8 外围配置
-该主题提供了 `友链`、`GTM 统计`、`Goole 站点`、`Google 广告`、`百度站点`、`百度联盟`、`百度统计`等等其他丰富的功能，我这里暂时并没有使用，主题的相关文档有有介绍如何配置，这里就不介绍了。
+该主题提供了 `友链`、`GTM 统计`、`Goole 站点`、`Google 广告`、`百度站点`、`百度联盟`、`百度统计`等等其他丰富的功能，我这里暂时并没有使用，主题的[相关文档](https://github.com/shixiaohu2206/)有介绍如何配置，这里就不介绍了。
 
 
 ### 3.9 代码高亮
-- tbd
-<!-- 本主题支持 highlight.js 官方的 css，[highlight.js 官网](https://highlightjs.org/static/demo/)看中哪个颜色搭配，复制 css 样式替换`themes\huhu\source\style\highlight.styl`
+主题[hexo-theme-huhu](https://github.com/shixiaohu2206/)支持 highlight.js 官方的 css，[highlight.js 官网](https://highlightjs.org/static/demo/)看中哪个颜色搭配，复制 css 样式替换`themes\huhu\source\style\highlight.styl`，这里使用的主题是`“Night Owl”`。
 
-新增 hljs 参数，并设为 trye，不然无法使用 highlight.js 官方的 css
+在根目录下的 `_config.yml` 中修改 *Writing* 部分配置，如下:
 
 ```yml
 highlight:
-  enable: true
-  hljs: true #新增hljs参数，并设为true，不然无法使用highlight.js 官方的 css
-  line_number: false #暂不支持行号
-  auto_detect: false #这一项也关闭，若开启有可能报错
-  tab_replace:
-``` -->
+  enable: true #开启代码块高亮
+  line_number: true #显示行号
+  auto_detect: true #如果未指定语言，则启用自动检测
+  tab_replace: '' # 用 n 个空格替换 tabs；如果值为空，则不会替换 tabs
+  wrap: true #Wrap the code block in <table>
+  hljs: true #默认为false,新增hljs参数，并设为true，不然无法使用highlight.js 官方的 css
+```
 
 ### 3.10 文章评论
 主题支持两种方案：
 1. valine (依赖LeanCloud)
 2. 畅言
+
 我这里选择的是valine
 - tbd
+
+遇到报错
+```
+Code -1: undefined [410 GET https://avoscloud.com/1.1/classes/Comment]
+```
 
 ```yml
 #valine评论
