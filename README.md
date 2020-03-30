@@ -76,13 +76,13 @@ $ npm install
 这里选择了主题[hexo-theme-huhu](https://github.com/shixiaohu2206/hexo-theme-huhu.git)，其他主题也是一样的操作方式。
 在项目根目录下运行以下命令：
 ```bash
-git clone https://github.com/shixiaohu2206/hexo-theme-huhu.git themes/hexo-theme-huhu
+$ git clone https://github.com/shixiaohu2206/hexo-theme-huhu.git themes/hexo-theme-huhu
 ```
 然后修改根目录下的 `_config.yml` 中的 theme 为 `hexo-theme-huhu`。
 本主题需要安装`shelljs`，因为 requiresJS 打包时，需要执行 bash 命令
 
 ```bash
-npm install --save shelljs
+$ npm install --save shelljs
 ```
 
 ### 3.5 站内搜索
@@ -90,7 +90,7 @@ npm install --save shelljs
 安装`hexo-generator-json-content`插件，用于生成站内搜索生成文件
 
 ```bash
-npm install --save hexo-generator-json-content
+$ npm install --save hexo-generator-json-content
 ```
 
 在根目录下的 `_config.yml` 中新增配置，如下:
@@ -115,15 +115,15 @@ jsonContent:
 about 页面没有单独 layout，直接以 markdown 渲染
 
 ```bash
-hexo new page "about"
+$ hexo new page "about"
 ```
 
 ### 3.7 新建 tags、categories、friends 页面
 
 ```bash
-hexo new page "tags"
-hexo new page "friends"
-hexo new page "categories"
+$ hexo new page "tags"
+$ hexo new page "friends"
+$ hexo new page "categories"
 ```
 tags、categories、friends 有单独的 layout，所以新增命令后，需要在 `/source/` 下对应的文件中新增 layout 参数，例如：
 ```markdown
@@ -158,13 +158,7 @@ highlight:
 1. valine (依赖LeanCloud)
 2. 畅言
 
-我这里选择的是valine
-- tbd
-
-遇到报错
-```
-Code -1: undefined [410 GET https://avoscloud.com/1.1/classes/Comment]
-```
+我这里选择的是valine，这个工具依赖LeanCloud提供的数据云储存服务，需要去LeanCloud官网注册账号并实名认证，然后获取App ID和App Key，在根目录配置 `_config.yml` 中添加:
 
 ```yml
 #valine评论
@@ -172,14 +166,20 @@ valine:
   API_ID: ''
   API_KEY: ''
 ```
+[valine官网](https://valine.js.org)有说明如何配置,但我在配置之后遇到以下报错：
+```
+Code -1: undefined [410 GET https://avoscloud.com/1.1/classes/Comment]
+```
+经过诸多尝试之后，发现使用LeanCloud华东节点就会出现以上报错，使用华北节点则没有问题。
 
 
 ### 3.11 RSS
-- tbd
-<!-- 安装插件`hexo-generator-feed`
+>`RSS`(Really Simple Syndication)是一种描述和同步网站内容的格式，是使用最广泛的XML应用。RSS搭建了信息迅速传播的一个技术平台，使得每个人都成为潜在的信息提供者。发布一个RSS文件后，这个RSS Feed中包含的信息就能直接被其他站点调用，而且由于这些数据都是标准的XML格式，所以也能在其他的终端和服务中使用，是一种描述和同步网站内容的格式。
+
+安装插件`hexo-generator-feed`
 
 ```bash
-npm install --save hexo-generator-feed
+$ npm install --save hexo-generator-feed
 ```
 
 在根目录配置 `_config.yml` 中添加
@@ -196,7 +196,7 @@ feed:
   content_limit_delim: ''
   order_by: -date
   icon: icon.png
-``` -->
+```
 
 ### 3.12 置顶
 - tbd
@@ -215,6 +215,43 @@ npm install hexo-generator-index-pin-top --save
 
 
 ### 3.13 自定义follow
-- tbd
-- iconfont 补充图标库
+主题内预置了一些社交网站的图标，图标来自[Iconfont阿里巴巴矢量图标库](https://www.iconfont.cn/)，我在原主题提供的图标基础上扩展了自己需要的图标，这里介绍一下扩展方式：
+- 在图标库内选择自己需要的图标，在购物车内选择下载代码，打开下载的压缩包，可以看到所需的以下文件，并进行相应的更名操作：
+    - iconfont.eot -> iconfont_extend.eot
+    - iconfont.svg -> iconfont_extend.svg
+    - iconfont.ttf -> iconfont_extend.ttf
+    - iconfont.woff -> iconfont_extend.woff
+    - iconfont.woff2 -> iconfont_extend.woff2
+- 将以上文件拷贝到`/themes/hexo-theme-huhu/source/style/iconfont/`目录下，并在`iconfont.css`中补充引用：
+    ```css
+    @font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1573718463074'); /* IE9 */
+    src: url('iconfont.eot?t=1573718463074#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAABOsAAsAAAAAIWwAABNdAAEAAAAAAAAAAEwAywOawZya...省略...+x9u5XguCYAAAA=') format('woff2'),
+    url('iconfont.woff?t=1573718463074') format('woff'),
+    url('iconfont.ttf?t=1573718463074') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1573718463074#iconfont') format('svg'); /* iOS 4.1- */
+    }
+
+    /* 以下为追加内容 */
+    @font-face {font-family: "iconfont";
+    src: url('iconfont_extend.eot?t=1573718463074'); /* IE9 */
+    src: url('iconfont_extend.eot?t=1573718463074#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAABOsAAsAAAAAIWwAABNdAAEAAAAAAAAAAEwAywOawZya...省略...+x9u5XguCYAAAA=') format('woff2'),
+    url('iconfont_extend.woff?t=1573718463074') format('woff'),
+    url('iconfont_extend.ttf?t=1573718463074') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont_extend.svg?t=1573718463074#iconfont') format('svg'); /* iOS 4.1- */
+    }
+    ```
+- `iconfont.css`中补充图标字体对应class引用样式描述，示例如下：
+    ```css
+    .icon-netease-cloud-music-line:before {
+        content: "\e76a";
+    }
+    ```
+
+- html中即可直接使用：
+    ```html
+    <span class="iconfont icon-netease-cloud-music-line"></span>
+    ```
 
