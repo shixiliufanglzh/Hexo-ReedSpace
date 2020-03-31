@@ -199,19 +199,15 @@ feed:
 ```
 
 ### 3.12 置顶
-- tbd
-<!-- 
 ```bash
 #卸载官方插件
-npm uninstall hexo-generator-index --save
+$ npm uninstall hexo-generator-index --save
 
 #安装插件
-npm install hexo-generator-index-pin-top --save
+$ npm install hexo-generator-index-pin-top --save
 ```
 
-在 markdown 文件的 `Front-matter`，新增 `top: 1`即可，top 值越大，越靠前展示
-
-主题在列表页增加了置顶的小图标，具体样式查看[虎虎博客](https://blog.utone.xyz/) -->
+在 markdown 文件的 `Front-matter`，新增 `top: 1`即可，top 值越大，越靠前展示。主题在列表页增加了置顶的小图标。
 
 
 ### 3.13 自定义follow
