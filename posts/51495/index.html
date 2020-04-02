@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script>
+  var _hmt = _hmt || []
+  ;(function() {
+    var hm = document.createElement('script')
+    hm.src = 'https://hm.baidu.com/hm.js?5a0acc897fd96474a2c8f4deac84611a'
+    var s = document.getElementsByTagName('script')[0]
+    s.parentNode.insertBefore(hm, s)
+  })()
+</script> 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="keywords" content="Reed,李智恒,博客,个人,reed" />
+    <meta name="description" content="Reed|李智恒|博客|个人|reed" />
+    
+    <title>
+      vim常用命令整理 - Reed Space
+    </title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    
+<link rel="stylesheet" href="/style/style.css">
+
+  <meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Reed Space" type="application/atom+xml">
+</head>
+  <body>
+    <canvas id='pagemap'></canvas>
+    
+    <div id="fixed-menu-wrap">
+      <span class="iconfont icon-sousuo search-box menu-reset"></span>
+      <span class="icon-toc menu-reset">Toc</span>
+      <span class="iconfont icon-arrowup menu-reset"></span>
+    </div>
+    <div id="fixed-menu">
+      <span class="iconfont icon-menu-"></span>
+    </div>
+    <div id="progress">
+      <div class="line"></div>
+    </div>
+    <div id="search-shade" class="animated hiddenSearch hide">
+      <div class="input-wrap">
+        <span class="iconfont icon-sousuo search-box"></span>
+        <input type="text" placeholder="Search" />
+        <span class="iconfont icon-close"></span>
+      </div>
+      <div class="search-result">
+        <div class="meta">
+          <span><b id="result-count">0</b> results found</span>
+          <img src="/images/avatar.jpg" />
+        </div>
+        <ul id="result-box"></ul>
+      </div>
+    </div>
+    <div id="menu-mask" class="animated hideMenuMask hide">
+      <span class="iconfont icon-close"></span>
+      <div class="nav">
+        
+        <a href="/" class="">
+          首页
+        </a>
+        
+        <a href="/archives" class="">
+          归档
+        </a>
+        
+        <a href="/categories" class="">
+          分类
+        </a>
+        
+        <a href="/tags" class="">
+          标签
+        </a>
+        
+        <a href="/about" class="">
+          关于
+        </a>
+        
+      </div>
+    </div>
+    <div id="header">
+      <div class="intro">
+        <a href="/" class="logo" style="background-image: url('/images/avatar.jpg')"></a>
+        <div class="author">Reed Li</div>
+      </div>
+      <div class="nav">
+        <span class="iconfont icon-menu menu-icon"></span>
+        <a href="#" class="search-box">
+          <span class="iconfont icon-sousuo"></span>
+        </a>
+      </div>
+    </div>
+    <div id="side" class="animated bounceInLeft">
+      <div class="shrink">
+        <a href="/" class="logo" style="background-image: url('/images/avatar.jpg')"></a>
+        <span class="iconfont icon-menu toggle-icon"></span>
+        <a href="#" class="search-box">
+          <span class="iconfont icon-sousuo"></span>
+        </a>
+      </div>
+      <div class="magnify">
+        <div class="about">
+          <div class="author">Reed Li</div>
+          <a href="/" class="logo" style="background-image: url('/images/avatar.jpg')"></a>
+        </div>
+
+        <div class="nav">
+          
+          <a href="/" class="">
+            首页
+          </a>
+          
+          <a href="/archives" class="">
+            归档
+          </a>
+          
+          <a href="/categories" class="">
+            分类
+          </a>
+          
+          <a href="/tags" class="">
+            标签
+          </a>
+          
+          <a href="/about" class="">
+            关于
+          </a>
+          
+          <a href="#" class="search-box">
+            <span class="iconfont icon-sousuo"></span>
+          </a>
+        </div>
+        <div class="bottom">
+          <div class="follow">
+            
+            <a href="https://github.com/shixiliufanglzh" target="_block">
+              <span class="iconfont icon-github"></span>
+            </a>
+            
+            <a href="https://www.instagram.com/shixiliufang1994" target="_block">
+              <span class="iconfont icon-instagram"></span>
+            </a>
+            
+            <a href="https://music.163.com/#/user/home?id=96741461" target="_block">
+              <span class="iconfont icon-netease-cloud-music-line"></span>
+            </a>
+             
+            <a href="/atom.xml" target="_block">
+              <span class="iconfont icon-rss"></span>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="main animated bounceInRight delay-0.7s">
+        <article class="post-entry">
+    <div class="header">
+      
+      <div class="title">vim常用命令整理</div>
+      <div class="meta">
+        <span class="item">
+          <span class="iconfont icon-time-circle"></span>
+          <span>2020/01/20</span>
+        </span>
+
+        
+          <span class="item leancloud-visitors" id="/posts/51495/" data-flag-title="vim常用命令整理">
+            <span class="iconfont icon-eye1"></span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        
+
+        
+        
+         
+          <span class="item">
+            <span class="iconfont icon-tag1"></span>
+            <span>
+                
+                  
+                    <a href="/tags/工具">工具</a>
+                  
+                
+            </span>
+          </span>
+         
+      </div>
+      <div>
+      </div>
+    </div>
+    <html><head></head><body><p>  Vim是一个强大的文本编辑工具，然而刚开始使用的体验是极其痛苦的，因为各种命令实在太多，而且各种命令按键乍看之下完全没有规律，对于以往的输入方式，完全没有借鉴之处。这个体验让我想起了五笔输入法，使用体验是类似的，慢慢练习熟练之后就会大幅提高效率。</p>
+<p><a href="https://images20200326.oss-cn-hangzhou.aliyuncs.com/blog/vim-keyboard.png" target="_blank" rel="noopener" data-caption="vim keyboard" data-fancybox="images"><img src="https://images20200326.oss-cn-hangzhou.aliyuncs.com/blog/vim-keyboard.png" alt="vim keyboard"></a></p>
+<p>  既然决定要开始学习Vim，那就开始定制学习计划。Vim命令那么多，想要一次性掌握几乎是不可能的，根据<u><strong>二八法则</strong></u>，先掌握20%的命令就可以解决80%需求，按照这样的思路，我做出了以下的安排：</p>
+<p>  首先要先知道Vim有三种工作模式：<code>普通模式</code>、<code>插入模式</code>、<code>命令模式</code>。</p>
+<ul>
+<li>普通模式进入插入模式，按下字母<code>i</code></li>
+<li>插入模式进入普通模式，按下<code>Esc</code>键</li>
+<li>普通模式进入命令模式，先输入冒号<code>:</code>，然后输入相应的命令以回车结束</li>
+</ul>
+<p>  接下来就是先记忆常用的命令，别一眼看着好像也不少，但是是有规律的，移动类的是基础中的基础，如果掌握了，后面的命令记忆起来会非常快：</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 移动（普通模式）</span><br>h：向左<br>j：向下<br>k：向上<br>l：向右<br>8l： 向右移动 8 个字符<br><br>0：到行首<br>^：到行首第一个非空字符<br>$：到行尾<br>gg：到文件头<br>G：到文件尾<br>22G：跳转到第 22 行<br><br>Ctrl+F: 到上页<br>Ctrl+B: 到下页<br></code></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 复制（普通模式）</span><br>yy：复制一行<br>8yy：向下复制8行<br><span class="hljs-comment"># 字母y搭配移动命令</span><br>y0：复制到行首<br>y^：复制到行首第一个非空字符<br>y$：复制到行尾<br></code></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 剪切（普通模式）</span><br>x：向后剪切1个字符，如果是在行尾，则为向前剪切<br>8x：剪切8个字符<br></code></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 删除（普通模式）- 删除的内容会保存到粘贴板，可以配合下面的粘贴命令使用</span><br>dd：删除一行<br>100dd：删除100行<br><span class="hljs-comment"># 字母d搭配移动命令</span><br>d0：复制到行首<br>d^：复制到行首第一个非空字符<br>d$：复制到行尾<br></code></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 粘贴（普通模式）- 对应上面三种类型操作的粘贴功能，外部粘贴板的内容不识别</span><br>p：粘贴保存在粘贴板的内容<br>8p：将粘贴板的内容粘贴8次<br></code></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 撤销（普通模式）</span><br>u：撤销1次<br>3u：撤销3次<br>U：撤销当前行的所有修改<br>Ctrl+r：恢复到撤销前<br></code></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 查找（普通模式）- 按下/直接进入查找，输入相应的字符串按确定即可</span><br>n：查找下1个匹配<br>N：查找上1个匹配<br>3n：查找下面第3个匹配<br></code></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 退出（命令模式）- 普通模式进入命令模式，先输入冒号：</span><br>q： 不保存退出<br>q!： 不保存，强制退出<br>wq：保存当前文件并退出<br></code></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 排版（命令模式）</span><br>ce： 本行内容居中 <span class="hljs-comment">#center单词简写</span><br>le： 本行内容居左 <span class="hljs-comment">#left单词简写</span><br>ri： 本行内容居右 <span class="hljs-comment">#right单词简写</span><br></code></pre></td></tr></tbody></table></figure>
+
+<p>  我认为的基本常用命令就这些，别看上去好像也不少，但是很多都是类似的，只是组合了以下，实际精简一下也就10来种类型的命令。相信这些命令足以解决初学者绝大部分情况下的需求。<br>  如果以上命令已经觉得烂熟于心了，那么就可以参照下面的这张总结图进行更全面的拓展了：</p>
+<p><a href="https://images20200326.oss-cn-hangzhou.aliyuncs.com/blog/vim-command.png" target="_blank" rel="noopener" data-caption="vim command" data-fancybox="images"><img src="https://images20200326.oss-cn-hangzhou.aliyuncs.com/blog/vim-command.png" alt="vim command"></a></p>
+</body></html>
+
+  
+    <div class="post-reward">
+    <div id="reward-button">打赏</div>
+      <div id="qr">
+        <div class="wrap">
+            
+            <div class="bg-wrap">
+              <a href="/images/ali_pay.jpeg" target="_block" class="bg" style="background-image:url('/images/ali_pay.jpeg')"></a>
+              支付宝
+            </div>
+            
+            
+            <div class="bg-wrap">
+                <a href="/images/wechat_pay.jpeg" target="_block" class="bg" style="background-image:url('/images/wechat_pay.jpeg')"></a>
+              微信
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  
+  <div class="post-guide">
+    <div class="item left">
+        
+          <a href="/posts/16113/">Hello World</a>
+        
+    </div>
+    <div class="item right">
+        
+    </div>
+  </div>
+
+  
+
+  <div class="post-copyright">
+    <div class="auth">
+      本文作者：<a href="http://blog.zhiheng.space">Reed Li</a>
+    </div>
+    <div class="link">
+      永久链接：<a href="http://blog.zhiheng.space/posts/51495/">http://blog.zhiheng.space/posts/51495/</a>
+    </div>
+    <div class="declare">
+      版权声明：本文首发于<a href="http://blog.zhiheng.space">Reed Li</a>的博客，转载请注明出处！
+    </div>
+  </div>
+
+  <div id="comment"></div>
+
+  
+  
+</article>
+        <footer>
+          <div class="copyright">
+            ©2020
+            <a href="http://blog.zhiheng.space">Reed Li</a> Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> |
+            <a href="https://github.com/shixiaohu2206/hexo-theme-huhu" target="_blank" rel="noopener">hexo-theme-huhu</a>
+          </div>
+          
+          <div class="icp" onclick="window.open('http://www.beian.miit.gov.cn')">
+            沪ICP备1xxxxxxx号
+          </div>
+          
+        </footer>
+      </div>
+    </div>
+  </body>
+  
+</html>
+<script type="text/javascript">
+                  window.HUHU_CONFIG = JSON.parse("{\"share\":[\"weibo\",\"weixin\",\"qqkongjian\",\"QQ\",\"douban\",\"facebook\",\"twitter\",\"google\"],\"valine\":{\"API_ID\":\"l1INbpb6u7fkp9FsDm9E5H91-gzGzoHsz\",\"API_KEY\":\"gCiTzc0QmGGMUQR7shMADuft\"},\"service_worker\":{\"open\":false}}")
+                </script> <script type="text/javascript">window.addEventListener('load', function() {
+    
+    window.loadJs = function(d, m, a) {
+      var c = document.getElementsByTagName('head')[0] || document.head || document.documentElement
+      var b = document.createElement('script')
+      b.defer = true
+      b.setAttribute('type', 'text/javascript')
+      b.setAttribute('charset', 'UTF-8')
+      b.setAttribute('async', 'true')
+      b.setAttribute('src', d)
+      m && b.setAttribute('data-main', '/scripts/app-built')
+      if (typeof a === 'function') {
+        if (window.attachEvent) {
+          b.onreadystatechange = function() {
+            var e = b.readyState
+            if (e === 'loaded' || e === 'complete') {
+              b.onreadystatechange = null
+              a()
+            }
+          }
+        } else {
+          b.onload = a
+        }
+      }
+      c.appendChild(b)
+    }
+    window.loadJs && window.loadJs('https://cdn.bootcss.com/require.js/2.3.6/require.min.js', true, function() {require.config({"paths":{"util":"util","share":"share","search":"search","pagemap":"pagemap.min","registerSW":"registerSW","valine":"cdn/Valine.min","av":["https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min"],"pjax":["https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min"],"jquery":["https://cdn.bootcss.com/jquery/3.4.1/jquery.min"],"confirm":["https://cdn.bootcss.com/jquery-confirm/3.3.4/jquery-confirm.min"],"fancybox":["https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min"],"chart":["https://cdn.bootcss.com/Chart.js/2.8.0-rc.1/Chart.bundle.min"]},"map":{"*":{"css":"https://cdn.bootcss.com/require-css/0.1.10/css.min.js"}},"shim":{"fancybox":{"deps":["css!https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css"]},"confirm":{"deps":["css!https://cdn.bootcss.com/jquery-confirm/3.3.4/jquery-confirm.min.css"]},"chart":{"deps":["css!https://cdn.bootcss.com/Chart.js/2.8.0-rc.1/Chart.min.css"]}},"waitSeconds":3})})
+  })</script> <script type="text/javascript">
+                  ;(function() {
+                    var bp = document.createElement('script')
+                    var curProtocol = window.location.protocol.split(':')[0]
+                    if (curProtocol === 'https') {
+                      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'
+                    } else {
+                      bp.src = 'http://push.zhanzhang.baidu.com/push.js'
+                    }
+                    var s = document.getElementsByTagName('script')[0]
+                    s.parentNode.insertBefore(bp, s)
+                  })()
+                </script> 
