@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Reed Space</title>
-  <icon>https://shixiliufanglzh.github.io/reed-space/icon.png</icon>
+  <icon>https://shixiliufanglzh.github.io/icon.png</icon>
   <subtitle>Reed的个人博客空间</subtitle>
   <link href="/reed-space/atom.xml" rel="self"/>
   
-  <link href="https://shixiliufanglzh.github.io/reed-space/"/>
-  <updated>2020-04-04T12:37:47.318Z</updated>
-  <id>https://shixiliufanglzh.github.io/reed-space/</id>
+  <link href="https://shixiliufanglzh.github.io/"/>
+  <updated>2020-04-04T15:09:54.824Z</updated>
+  <id>https://shixiliufanglzh.github.io/</id>
   
   <author>
     <name>Reed Li</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://shixiliufanglzh.github.io/reed-space/posts/16113/"/>
-    <id>https://shixiliufanglzh.github.io/reed-space/posts/16113/</id>
-    <published>2020-04-04T12:37:47.318Z</published>
-    <updated>2020-04-04T12:37:47.318Z</updated>
+    <link href="https://shixiliufanglzh.github.io/posts/16113/"/>
+    <id>https://shixiliufanglzh.github.io/posts/16113/</id>
+    <published>2020-04-04T15:09:54.824Z</published>
+    <updated>2020-04-04T15:09:54.824Z</updated>
     
     <summary type="html">
     
@@ -38,10 +38,10 @@
   
   <entry>
     <title>vim常用命令整理</title>
-    <link href="https://shixiliufanglzh.github.io/reed-space/posts/51495/"/>
-    <id>https://shixiliufanglzh.github.io/reed-space/posts/51495/</id>
+    <link href="https://shixiliufanglzh.github.io/posts/51495/"/>
+    <id>https://shixiliufanglzh.github.io/posts/51495/</id>
     <published>2020-01-20T22:59:58.000Z</published>
-    <updated>2020-04-04T12:37:47.318Z</updated>
+    <updated>2020-04-04T15:09:54.824Z</updated>
     
     <summary type="html">
     
@@ -54,7 +54,7 @@
     
     
     
-      <category term="工具" scheme="https://shixiliufanglzh.github.io/reed-space/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://shixiliufanglzh.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
