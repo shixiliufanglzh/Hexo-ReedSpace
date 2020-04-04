@@ -10,7 +10,7 @@ personal blog website
 
 ### 2.1 拷贝项目到本地
 ```bash
-$ git clone git@github.com:shixiliufanglzh/hexo-reed-space.git
+$ git clone git@github.com:shixiliufanglzh/reed-space.git
 ```
 
 ### 2.2 安装依赖

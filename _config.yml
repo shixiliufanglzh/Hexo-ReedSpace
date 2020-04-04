@@ -13,8 +13,12 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://shixiliufanglzh.github.io/reed-space
+url: https://shixiliufanglzh.github.io
 root: /reed-space/
+
+#reset the resource path
+staticFilePathPrefix: /reed-space
+
 # permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink/
 permalink_defaults:

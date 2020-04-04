@@ -17,7 +17,7 @@ categories_max: 5
 tags_max: 10
 
 #favicon
-favicon: /images/favicon.ico
+favicon: /reed-space/images/favicon.ico
 
 #site switch
 site_search: true
