@@ -91,6 +91,33 @@ a {
     background: #BBDEFB
 }
 
-figure td.gutter {
-    width: 20px;
+.post-entry {
+    figure table {
+        table-layout: fixed;
+        tr {
+            td {
+                &.gutter {
+                    width: 28px;
+                    pre {
+                        padding: 0.75rem 4px 0.75rem 2px;
+                        background: #011627;
+                        color: #666;
+                        text-align: right;
+                        border-radius: 0.35rem 0 0 0.35rem;
+                        border-right: 1px solid #333;
+                    }
+                }
+                &.code {
+                    pre code.hljs {
+                        border-radius: 0 0.35rem 0.35rem 0;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }
+    

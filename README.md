@@ -140,6 +140,39 @@ layout: categories
 
 ### 3.9 代码高亮
 主题[hexo-theme-huhu](https://github.com/shixiaohu2206/)支持 highlight.js 官方的 css，[highlight.js 官网](https://highlightjs.org/static/demo/)看中哪个颜色搭配，复制 css 样式替换`themes\huhu\source\style\highlight.styl`，这里使用的主题是`“Night Owl”`。
+原主题样式显示有些问题，我这里做了适当的调整了布局和配色，在主题的`source/style/reset.styl`文件中追加了如下内容：
+```stylus
+.post-entry {
+    figure table {
+        table-layout: fixed;
+
+        tr td {
+            &.gutter {
+                width: 28px;
+
+                pre {
+                    padding: 0.75rem 4px 0.75rem 2px;
+                    background: #011627;
+                    color: #666;
+                    text-align: right;
+                    border-radius: 0.35rem 0 0 0.35rem;
+                    border-right: 1px solid #333;
+                }
+            }
+
+            &.code {
+                pre code.hljs {
+                    border-radius: 0 0.35rem 0.35rem 0;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 在根目录下的 `_config.yml` 中修改 *Writing* 部分配置，如下:
 
