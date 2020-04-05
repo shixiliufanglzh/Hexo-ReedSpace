@@ -14,7 +14,7 @@
       <% if (title) { %><%= title %><% } else { %> <%= config.subtitle %> <% }%> <%= title || config.subtitle ? '-' : ''
       %> <%= config.title %>
     </title>
-    <link rel="manifest" href="<%- config.staticFilePathPrefix + '/manifest.json' %>" />
+    <link rel="manifest" href="<%- config.sourceFolder + '/manifest.json' %>" />
     <link rel="shortcut icon" href="<%= theme.favicon %>" type="image/x-icon" />
     <%- css('style/style') %>
   </head>
@@ -46,7 +46,7 @@
       <div class="search-result">
         <div class="meta">
           <span><b id="result-count">0</b> results found</span>
-          <img src="<%- config.staticFilePathPrefix + '/images/avatar.jpg' %>" />
+          <img src="<%- config.sourceFolder + '/images/avatar.jpg' %>" />
         </div>
         <ul id="result-box"></ul>
       </div>
@@ -63,7 +63,7 @@
     </div>
     <div id="header">
       <div class="intro">
-        <a href="<%- config.staticFilePathPrefix %>" class="logo" style="background-image: url('<%- config.staticFilePathPrefix + '/images/avatar.jpg' %>')"></a>
+        <a href="<%- config.sourceFolder %>" class="logo" style="background-image: url('<%- config.sourceFolder + '/images/avatar.jpg' %>')"></a>
         <div class="author"><%= theme.author%></div>
       </div>
       <div class="nav">
@@ -75,7 +75,7 @@
     </div>
     <div id="side" class="animated bounceInLeft">
       <div class="shrink">
-        <a href="<%- config.staticFilePathPrefix %>" class="logo" style="background-image: url('<%- config.staticFilePathPrefix + '/images/avatar.jpg' %>')"></a>
+        <a href="<%- config.sourceFolder %>" class="logo" style="background-image: url('<%- config.sourceFolder + '/images/avatar.jpg' %>')"></a>
         <span class="iconfont icon-menu toggle-icon"></span>
         <a href="#" class="search-box">
           <span class="iconfont icon-sousuo"></span>
@@ -84,7 +84,7 @@
       <div class="magnify">
         <div class="about">
           <div class="author"><%= theme.author%></div>
-          <a href="<%- config.staticFilePathPrefix %>" class="logo" style="background-image: url('<%- config.staticFilePathPrefix + '/images/avatar.jpg' %>')"></a>
+          <a href="<%- config.sourceFolder %>" class="logo" style="background-image: url('<%- config.sourceFolder + '/images/avatar.jpg' %>')"></a>
         </div>
 
         <div class="nav">

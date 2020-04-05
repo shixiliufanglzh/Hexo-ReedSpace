@@ -68,7 +68,7 @@ module.exports = function() {
       b.setAttribute('charset', 'UTF-8')
       b.setAttribute('async', 'true')
       b.setAttribute('src', d)
-      m && b.setAttribute('data-main', '${this.config.staticFilePathPrefix}/scripts/${env === 'development' ? 'app' : 'app-built'}')
+      m && b.setAttribute('data-main', '${this.config.sourceFolder}/scripts/${env === 'development' ? 'app' : 'app-built'}')
       if (typeof a === 'function') {
         if (window.attachEvent) {
           b.onreadystatechange = function() {

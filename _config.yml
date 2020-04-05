@@ -17,7 +17,7 @@ url: https://shixiliufanglzh.github.io
 root: /reed-space/
 
 #reset the resource path
-staticFilePathPrefix: /reed-space
+sourceFolder: /reed-space
 
 # permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink/

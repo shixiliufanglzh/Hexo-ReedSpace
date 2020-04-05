@@ -3,7 +3,7 @@
  */
 define(['jquery', 'util'], function($, util) {
   'use strict'
-
+  
   var SEARCH_KEY = 'SEARCH'
   var SEARCH_EXPIRE = 30 * 24 * 60 * 60 * 1000 // 默认过期时间30天
   var resultBoxDom = $('#result-box')
@@ -31,7 +31,7 @@ define(['jquery', 'util'], function($, util) {
   function getSeatchData() {
     let content = getStatic()
     if (!content) {
-      return fetch('/content.json', { method: 'GET' })
+      return fetch(HUHU_CONFIG.sourceFolder + '/content.json', { method: 'GET' })
         .then(resp => resp.json())
         .then(json => {
           json && setStatic(json)
