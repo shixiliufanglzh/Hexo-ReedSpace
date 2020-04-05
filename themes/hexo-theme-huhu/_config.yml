@@ -79,8 +79,8 @@ baidu_push: true
 
 #reward
 reward:
-  weixin: 'images/wechat_pay.jpeg'
-  zhifubao: 'images/ali_pay.jpeg'
+  weixin: 'images/wechat_pay.jpg'
+  zhifubao: 'images/ali_pay.jpg'
 
 #service worker 配合pjax
 service_worker:
