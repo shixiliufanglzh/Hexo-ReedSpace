@@ -28,7 +28,7 @@ define(['jquery', 'util'], function($, util) {
     return util.STORAGE.getInstance().set(SEARCH_KEY, value, SEARCH_EXPIRE)
   }
 
-  function getSeatchData() {
+  function getSearchData() {
     let content = getStatic()
     if (!content) {
       return fetch(HUHU_CONFIG.sourceFolder + '/content.json', { method: 'GET' })
@@ -65,7 +65,7 @@ define(['jquery', 'util'], function($, util) {
   function inputSearch(key) {
     if (key) {
       // 尝试获取数据
-      getSeatchData().then(data => {
+      getSearchData().then(data => {
         let posts = data.posts
 
         if (posts.length) {
