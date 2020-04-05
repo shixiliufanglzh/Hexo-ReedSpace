@@ -13,7 +13,8 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://shixiliufanglzh.github.io
+url: https://shixiliufanglzh.github.io/reed-space
+# url: http://localhost:4000/reed-space
 root: /reed-space/
 
 #reset the resource path
