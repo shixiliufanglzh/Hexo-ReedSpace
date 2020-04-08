@@ -4,7 +4,7 @@ module.exports = function() {
   const CONFIG = _.assign({}, this.config, this.theme)
 
   let huhu_config = {
-    sourceFolder: CONFIG.sourceFolder,
+    sourceFolder: CONFIG.sourceFolder || '',
     share: CONFIG.share,
     valine: CONFIG.valine,
     service_worker: CONFIG.service_worker,

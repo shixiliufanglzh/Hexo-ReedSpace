@@ -56,7 +56,7 @@
               <span class="desp">
                 <% for (var j=0; j < post.categories.data.length; j++) { %> <% if (post.categories.data[j] &&
                 post.categories.data[j].name) { %>
-                <a href="<%- config.sourceFolder %>/categories/<%- post.categories.data[j].name %>"><%- post.categories.data[j].name %></a>
+                <a href="<%- (config.sourceFolder || '') %>/categories/<%- post.categories.data[j].name %>"><%- post.categories.data[j].name %></a>
                 <% } %> <% } %>
               </span>
               <% } %>
@@ -68,7 +68,7 @@
               <span class="desp">
                 <% for (var i=0; i < post.tags.data.length; i++) { %> <% if (post.tags.data[i] &&
                 post.tags.data[i].name) { %>
-                <a href="<%- config.sourceFolder %>/tags/<%- post.tags.data[i].name %>"><%- post.tags.data[i].name %></a>
+                <a href="<%- (config.sourceFolder || '') %>/tags/<%- post.tags.data[i].name %>"><%- post.tags.data[i].name %></a>
                 <% } %> <% } %>
               </span>
             </div>

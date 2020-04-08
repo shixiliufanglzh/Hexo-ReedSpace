@@ -25,7 +25,7 @@
           <span>
               <% for (var j=0; j < page.categories.data.length; j++) { %>
                 <% if (page.categories.data[j] && page.categories.data[j].name) { %>
-                  <a href="<%- config.sourceFolder %>/categories/<%- page.categories.data[j].name %>"><%- page.categories.data[j].name %></a>
+                  <a href="<%- (config.sourceFolder || '') %>/categories/<%- page.categories.data[j].name %>"><%- page.categories.data[j].name %></a>
                 <% } %>
               <% } %>
           </span>
@@ -38,7 +38,7 @@
             <span>
                 <% for (var j=0; j < page.tags.data.length; j++) { %>
                   <% if (page.tags.data[j] && page.tags.data[j].name) { %>
-                    <a href="<%- config.sourceFolder %>/tags/<%- page.tags.data[j].name %>"><%- page.tags.data[j].name %></a>
+                    <a href="<%- (config.sourceFolder || '') %>/tags/<%- page.tags.data[j].name %>"><%- page.tags.data[j].name %></a>
                   <% } %>
                 <% } %>
             </span>
@@ -57,13 +57,13 @@
         <div class="wrap">
             <% if (theme.reward.zhifubao) { %>
             <div class="bg-wrap">
-              <a href="<%- url_for(theme.reward.zhifubao) %>" target="_block" class="bg" style="background-image:url('<%- config.sourceFolder %>/<%- theme.reward.zhifubao %>')"></a>
+              <a href="<%- url_for(theme.reward.zhifubao) %>" target="_block" class="bg" style="background-image:url('<%- (config.sourceFolder || '') %>/<%- theme.reward.zhifubao %>')"></a>
               支付宝
             </div>
             <% } %>
             <% if (theme.reward.weixin) { %>
             <div class="bg-wrap">
-                <a href="<%- url_for(theme.reward.weixin) %>" target="_block" class="bg" style="background-image:url('<%- config.sourceFolder %>/<%- theme.reward.weixin %>')"></a>
+                <a href="<%- url_for(theme.reward.weixin) %>" target="_block" class="bg" style="background-image:url('<%- (config.sourceFolder || '') %>/<%- theme.reward.weixin %>')"></a>
               微信
             </div>
             <% } %>
