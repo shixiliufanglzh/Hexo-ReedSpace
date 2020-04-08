@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Reed Space</title>
-  <icon>https://zhiheng.space/reed-space/icon.png</icon>
+  <icon>http://zhiheng.space/icon.png</icon>
   <subtitle>Reed的个人博客空间</subtitle>
-  <link href="/reed-space/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
-  <link href="https://zhiheng.space/reed-space/"/>
-  <updated>2020-04-08T13:08:54.480Z</updated>
-  <id>https://zhiheng.space/reed-space/</id>
+  <link href="http://zhiheng.space/"/>
+  <updated>2020-04-08T13:14:24.574Z</updated>
+  <id>http://zhiheng.space/</id>
   
   <author>
     <name>Reed Li</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://zhiheng.space/reed-space/posts/16113/"/>
-    <id>https://zhiheng.space/reed-space/posts/16113/</id>
-    <published>2020-04-08T13:08:54.480Z</published>
-    <updated>2020-04-08T13:08:54.480Z</updated>
+    <link href="http://zhiheng.space/posts/16113/"/>
+    <id>http://zhiheng.space/posts/16113/</id>
+    <published>2020-04-08T13:14:24.574Z</published>
+    <updated>2020-04-08T13:14:24.574Z</updated>
     
     <summary type="html">
     
@@ -38,10 +38,10 @@
   
   <entry>
     <title>vim常用命令整理</title>
-    <link href="https://zhiheng.space/reed-space/posts/51495/"/>
-    <id>https://zhiheng.space/reed-space/posts/51495/</id>
+    <link href="http://zhiheng.space/posts/51495/"/>
+    <id>http://zhiheng.space/posts/51495/</id>
     <published>2020-01-20T22:59:58.000Z</published>
-    <updated>2020-04-08T13:08:54.480Z</updated>
+    <updated>2020-04-08T13:14:24.574Z</updated>
     
     <summary type="html">
     
@@ -53,10 +53,10 @@
     </summary>
     
     
-      <category term="技术" scheme="https://zhiheng.space/reed-space/categories/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="http://zhiheng.space/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="工具" scheme="https://zhiheng.space/reed-space/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="http://zhiheng.space/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
