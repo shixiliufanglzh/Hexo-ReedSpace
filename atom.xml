@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhiheng.space/"/>
-  <updated>2020-04-08T13:23:00.632Z</updated>
+  <updated>2020-10-25T02:39:15.539Z</updated>
   <id>https://zhiheng.space/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Hello World</title>
     <link href="https://zhiheng.space/posts/16113/"/>
     <id>https://zhiheng.space/posts/16113/</id>
-    <published>2020-04-08T13:23:00.632Z</published>
-    <updated>2020-04-08T13:23:00.632Z</updated>
+    <published>2020-10-25T02:39:15.539Z</published>
+    <updated>2020-10-25T02:39:15.539Z</updated>
     
     <summary type="html">
     
@@ -37,11 +37,36 @@
   </entry>
   
   <entry>
+    <title>[笔记]理解javascript原型和原型链</title>
+    <link href="https://zhiheng.space/posts/14180/"/>
+    <id>https://zhiheng.space/posts/14180/</id>
+    <published>2020-10-24T22:21:16.000Z</published>
+    <updated>2020-10-25T02:39:15.539Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;  &lt;code&gt;new&lt;/code&gt;运算符从构造器中得到一个对象，下面的代码我们再熟悉不过了：&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td c
+      
+    
+    </summary>
+    
+    
+      <category term="前端开发" scheme="https://zhiheng.space/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="javascript" scheme="https://zhiheng.space/tags/javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>vim常用命令整理</title>
     <link href="https://zhiheng.space/posts/51495/"/>
     <id>https://zhiheng.space/posts/51495/</id>
     <published>2020-01-20T22:59:58.000Z</published>
-    <updated>2020-04-08T13:23:00.632Z</updated>
+    <updated>2020-10-25T02:39:15.539Z</updated>
     
     <summary type="html">
     
